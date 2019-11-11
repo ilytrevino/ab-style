@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 
 const SingleBead = styled.b`
-  background-color: skyBlue;
   display: inline-block;
   cursor: grabbing;
   width: 50px;
@@ -13,10 +12,9 @@ const SingleBead = styled.b`
 `;
 
 const Bead = (props) => {
-
   return (
     <React.Fragment>
-      <SingleBead draggable="true"/>
+      <SingleBead style={{ backgroundColor: props.color }} draggable="true"/>
     </React.Fragment>
   )
 };

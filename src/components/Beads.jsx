@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Bead from './Bead.jsx';
 
-let colorCodes = ["paleBlue", "powderBlue", "niagara"];
+let colorCodes = ["paleBlue", "powderBlue", "niagara", "navyBlue", "skyBlue"];
 
 class Beads extends React.Component {
   constructor(props){
