@@ -14,11 +14,22 @@ const colors = {
   green: '#51b434',
 };
 
+const spacing = {
+  sSize: "1.2rem",
+  mSize: "1.6rem",
+  lSize: "3.2rem",
+  xlSize: "4.8rem",
+  logo: "8rem",
+}
+
 const theme = {
   colors: {
     ...colors,
   },
   fontSizes: [12, 14, 16, 20, 24, 32, 48, 64],
+  spacing: {
+    ...spacing
+  }
 };
 
 export default theme;

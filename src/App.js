@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './img/logo.jpg';
-import { ThemeProvider, createGlobalStyle } from 'styled-components';
-import './styles/styles.scss';
+import { ThemeProvider } from 'styled-components';
+import './index.css';
 
 import Beads from './components/Beads.jsx';
 import theme from '../src/utils/theme';
