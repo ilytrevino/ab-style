@@ -32,3 +32,11 @@ body {
 .App-link {
   color: #09d3ac;
 }
+
+#snaptarget {
+  width: 80vw;
+  border-radius: 30px;
+  border-bottom: 20px solid #2d2d2d;
+  text-align: center;
+  margin: 70px auto;
+}

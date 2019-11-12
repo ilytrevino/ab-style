@@ -1,8 +1,12 @@
 import React from 'react';
 import Bead from './Bead.jsx';
 
+
 let colorCodes = ["paleBlue", "powderBlue", "niagara", "navyBlue", "skyBlue",
-"lint", "islandParadise", "mintGreen", "turquoise", "lakeBlue", "lime", "green"];
+"lint", "islandParadise", "mintGreen", "turquoise", "lakeBlue", "lime", "green",
+"white", "beige", "wood", "coralPink", "babyPink", "pink", "lightPurple", "purple",
+"babyYellow", "yellow", "sandyBrown", "lightMaroon", "orange", "red", "brown",
+"grey", "fuchsia", "black"];
 
 class Beads extends React.Component {
   constructor(props){

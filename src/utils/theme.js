@@ -12,6 +12,24 @@ const colors = {
   lakeBlue: '#0d93a0',
   lime: '#b6d045',
   green: '#51b434',
+  white: 'white',
+  beige: '#e2e1c5',
+  wood: '#c4b783',
+  coralPink: '#f0dac1',
+  babyPink: '#e8c6c0',
+  pink: '#e289a2',
+  lightPurple: '#b49eb1',
+  purple: '#6c427a',
+  babyYellow: '#dfe38e',
+  yellow: '#e4d865',
+  sandyBrown: '#d19f42',
+  lightMaroon: '#a25b4e',
+  orange: '#d67434',
+  red: '#bf3b30',
+  brown: '#583a28',
+  grey: '#797d7c',
+  fuchsia: '#c65282',
+  black: '#222228'
 };
 
 const spacing = {
