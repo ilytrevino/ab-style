@@ -16,12 +16,18 @@ class Beads extends React.Component {
     })
   }
 
+  // drag = (ev) => {
+  //   ev.dataTransfer.setData("text", ev.target.id);
+  // }
+
   render() {
     return(
       <React.Fragment>
-        {
-          this.state.colors.map((e, index) => (<Bead key={e} color={e} />))
-        }
+        <div className="beadsLayout">
+          {
+            this.state.colors.map((e, index) => (<Bead ondragstart={this.drag} key={e} color={e} />))
+          }
+        </div>
       </React.Fragment>
     )
   }

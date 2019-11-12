@@ -1,5 +1,7 @@
 import React from 'react';
 
+
+
 class Beads extends React.Component {
   constructor(props){
     super(props);
@@ -7,10 +9,23 @@ class Beads extends React.Component {
       colors: [],
     })
   }
+
+  // allowDrop = (ev) => {
+  //   ev.preventDefault();
+  // }
+  //
+  // drop = (ev) => {
+  //   ev.preventDefault();
+  //   var data = ev.dataTransfer.getData("text");
+  //   ev.target.appendChild(document.getElementById(data));
+  // }
+
   render() {
     return(
       <React.Fragment>
-        <div id="snaptarget"></div>
+        <div className="container" id="div1" onDrop={this.drop} onDragOver={this.allowDrop}>
+          <div id="snaptarget" ></div>
+        </div>
       </React.Fragment>
     )
   }

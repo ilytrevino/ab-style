@@ -9,6 +9,10 @@ body {
   background: #e9ebee;
 }
 
+h1 {
+  margin: auto 20px;
+}
+
 .App {
   text-align: center;
   min-height: 100vh;
@@ -23,8 +27,7 @@ body {
   min-height: 10vh;
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  align-items: left;
   font-size: calc(5px + 2vmin);
   color: white;
 }
@@ -33,10 +36,26 @@ body {
   color: #09d3ac;
 }
 
+.container{
+  display: table-cell;
+  height: 200px;
+  width: 100vw;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.beadsLayout {
+  width: 80vw;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 #snaptarget {
   width: 80vw;
   border-radius: 30px;
-  border-bottom: 20px solid #2d2d2d;
-  text-align: center;
-  margin: 70px auto;
+  border-bottom: 15px solid #2d2d2d;
+  margin: auto;
 }
