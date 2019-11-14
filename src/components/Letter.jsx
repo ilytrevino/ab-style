@@ -1,18 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
+import LetterA from '../img/abc/a.png';
 
-const SingleBead = styled('div')(props => `
-  background-color: ${props.theme.colors[props.color]};
+const SingleLetter = styled('img')(props => `
   display: inline-block;
   cursor: grabbing;
-  width: 50px;
-  height: 50px;
-  margin: 10px 5px;
-  border-radius: 50%;
-  box-shadow: inset 0px -15px 20px rgba(0,0,0,.25);
+  width: 90px;
+  height: 90px;
+  margin: 0 -5px;
 `);
 
-function Bead (props) {
+function Letter (props) {
 
   const dragStart = e => {
     const target = e.target;
@@ -29,18 +27,17 @@ function Bead (props) {
 
   return (
     <React.Fragment>
-      <SingleBead
+      <SingleLetter
         className={props.className}
-        color={props.color}
         draggable={props.draggable}
         id={props.id}
         onDragStart={dragStart}
         onDragOver={dragOver}
+        src={LetterA}
       >
-        {props.children}
-      </SingleBead>
+      </SingleLetter>
     </React.Fragment>
   )
 };
 
-export default Bead;
+export default Letter;

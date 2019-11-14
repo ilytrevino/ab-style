@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Preview (props) {
+function Board (props) {
 
   const drop = e => {
     e.preventDefault();
@@ -16,17 +16,16 @@ function Preview (props) {
     e.preventDefault();
   }
 
-  return(
-    <React.Fragment>
-      <div
-        className={props.className}
-        id={props.id}
-        onDrop={drop}
-        onDragOver={dragOver}
-      >
-      </div>
-    </React.Fragment>
+  return (
+    <div
+      className={props.className}
+      id={props.id}
+      onDrop={drop}
+      onDragOver={dragOver}
+    >
+      { props.children }
+    </div>
   )
-}
+};
 
-export default Preview;
+export default Board;

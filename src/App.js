@@ -5,29 +5,31 @@ import HTML5Backend from 'react-dnd-html5-backend';
 import { DndProvider } from 'react-dnd';
 import './index.css';
 
-import Preview from './components/Preview.jsx';
 import Beads from './components/Beads.jsx';
+import Board from './components/Board.jsx';
+import Letters from './components/Letters.jsx';
+import Preview from './components/Preview.jsx';
 import theme from '../src/utils/theme';
 
 function App() {
   return (
     <div className="App">
       <ThemeProvider theme={theme}>
-        <DndProvider backend={HTML5Backend}>
-          <header className="App-header">
-            <img src={logo} className="App-logo" alt="logo" />
-            <h1>Diseña tu mordedera</h1>
-          </header>
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <h1>Diseña tu mordedera</h1>
+        </header>
 
-          <main>
-            <section>
-              <Beads />
-            </section>
-            <section>
-              <Preview />
-            </section>
-          </main>
-        </DndProvider>
+        <main className="flexbox">
+          <Board id="Board-1" className="board">
+            <Beads />
+            <Letters />
+          </Board>
+          <Board id="Board-2" className="board">
+            <div id="snaptarget" />
+          </Board>
+        </main>
+
       </ThemeProvider>
     </div>
   );

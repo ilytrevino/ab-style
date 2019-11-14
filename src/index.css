@@ -7,6 +7,7 @@ body {
   font-family: 'Poppins', sans-serif;
   height: 100vh;
   background: #e9ebee;
+  margin: 0;
 }
 
 h1 {
@@ -30,32 +31,55 @@ h1 {
   align-items: left;
   font-size: calc(5px + 2vmin);
   color: white;
+  margin: 0 5px;
 }
 
 .App-link {
   color: #09d3ac;
 }
 
-.container{
-  display: table-cell;
-  height: 200px;
-  width: 100vw;
-  vertical-align: middle;
-  text-align: center;
+.flexbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.beadsLayout {
-  width: 80vw;
-  margin: auto;
+.flexbox .board {
+  flex-wrap: wrap;
+}
+
+.board {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  min-height: 100px;
+  align-self: stretch;
+}
+
+.preview {
+  display: inline-flex;
+  margin: auto;
+}
+
+#Board-2 .bead {
+  margin: auto 0;
+}
+
+#Board-2 {
+  position: relative;
+  width: 80vw;
+  margin: auto;
 }
 
 #snaptarget {
-  width: 80vw;
-  border-radius: 30px;
-  border-bottom: 15px solid #2d2d2d;
+  position: absolute;
+  background-color: #2d2d2d;
+  height: 10px;
+  top: 0;
+  bottom: 0;
   margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  border-radius: 50px;
+  z-index: -1;
 }

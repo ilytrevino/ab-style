@@ -1,7 +1,6 @@
 import React from 'react';
 import Bead from './Bead.jsx';
 
-
 let colorCodes = ["paleBlue", "powderBlue", "niagara", "navyBlue", "skyBlue",
 "lint", "islandParadise", "mintGreen", "turquoise", "lakeBlue", "lime", "green",
 "white", "beige", "wood", "coralPink", "babyPink", "pink", "lightPurple", "purple",
@@ -16,18 +15,19 @@ class Beads extends React.Component {
     })
   }
 
-  // drag = (ev) => {
-  //   ev.dataTransfer.setData("text", ev.target.id);
-  // }
-
   render() {
     return(
       <React.Fragment>
-        <div className="beadsLayout">
-          {
-            this.state.colors.map((e, index) => (<Bead ondragstart={this.drag} key={e} color={e} />))
-          }
-        </div>
+        {
+          this.state.colors.map((e, index) => (
+            <Bead
+              className="bead"
+              color={e}
+              draggable="true"
+              id={e}
+              key={e}
+            />))
+        }
       </React.Fragment>
     )
   }
