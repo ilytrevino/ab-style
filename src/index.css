@@ -68,6 +68,7 @@ h1 {
   position: relative;
   width: 80vw;
   margin: auto;
+  margin-top: 20px;
 }
 
 #snaptarget {
@@ -77,9 +78,16 @@ h1 {
   top: 0;
   bottom: 0;
   margin: auto;
-  position: absolute;
   left: 0;
   right: 0;
   border-radius: 50px;
   z-index: -1;
+}
+
+.options {
+  margin: 10px 0;
+  display: flex;
+  flex: 1;
+  flex-direction: row ;
+  flex-wrap: wrap;
 }

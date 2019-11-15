@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import LetterA from '../img/abc/a.png';
 
 const SingleLetter = styled('img')(props => `
   display: inline-block;
@@ -25,6 +24,8 @@ function Letter (props) {
     e.stopPropagation();
   }
 
+  let imgSrc = "/abc/" + props.id + ".png"
+
   return (
     <React.Fragment>
       <SingleLetter
@@ -33,7 +34,7 @@ function Letter (props) {
         id={props.id}
         onDragStart={dragStart}
         onDragOver={dragOver}
-        src={LetterA}
+        src={imgSrc}
       >
       </SingleLetter>
     </React.Fragment>

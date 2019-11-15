@@ -1,0 +1,8 @@
+[{
+  "colorCodes": ["paleBlue", "powderBlue", "niagara", "navyBlue", "skyBlue",
+    "lint", "islandParadise", "mintGreen", "turquoise", "lakeBlue", "lime", "green",
+    "white", "beige", "wood", "coralPink", "babyPink", "pink", "lightPurple", "purple",
+    "babyYellow", "yellow", "sandyBrown", "lightMaroon", "orange", "red", "brown",
+    "grey", "fuchsia", "black"],
+  "letters": "abcdefghijklmnopqrstuvwxyz".split('')
+}]

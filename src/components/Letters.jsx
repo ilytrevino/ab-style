@@ -1,25 +1,25 @@
 import React from 'react';
 import Letter from './Letter.jsx';
 
-class Letters extends React.Component {
-  constructor(props){
-    super(props);
-    this.state = ({
+function Letters (props) {
 
-    })
-  }
+  const alphabet = "abcdefghijklmnopqrstuvwxyz".split("");
 
-  render() {
-    return(
-      <React.Fragment>
-        <Letter
-          className="letter"
-          draggable="true"
-          id="letterA"
-        />
-      </React.Fragment>
-    )
-  }
+  return(
+    <React.Fragment>
+      <div className="options">
+        {
+          alphabet.map((e, index) => (
+            <Letter
+              className="letter"
+              draggable="true"
+              id={e}
+              key={e}
+            />))
+        }
+      </div>
+    </React.Fragment>
+  )
 }
 
 export default Letters;

@@ -1,25 +1,17 @@
 import React from 'react';
 import Bead from './Bead.jsx';
 
-let colorCodes = ["paleBlue", "powderBlue", "niagara", "navyBlue", "skyBlue",
-"lint", "islandParadise", "mintGreen", "turquoise", "lakeBlue", "lime", "green",
-"white", "beige", "wood", "coralPink", "babyPink", "pink", "lightPurple", "purple",
-"babyYellow", "yellow", "sandyBrown", "lightMaroon", "orange", "red", "brown",
-"grey", "fuchsia", "black"];
+function Beads (props) {
 
-class Beads extends React.Component {
-  constructor(props){
-    super(props);
-    this.state = ({
-      colors: colorCodes,
-    })
-  }
+  let colorCodes = ["black", "white", "mintGreen", "paleBlue", "powderBlue", "grey",
+  "skyBlue", "navyBlue", "purple", "turquoise", "lime", "islandParadise", "orange",
+  "beige", "pink", "lightPurple", "yellow", "fuchsia"];
 
-  render() {
-    return(
-      <React.Fragment>
+  return(
+    <React.Fragment>
+      <div className="options">
         {
-          this.state.colors.map((e, index) => (
+          colorCodes.map((e, index) => (
             <Bead
               className="bead"
               color={e}
@@ -28,9 +20,9 @@ class Beads extends React.Component {
               key={e}
             />))
         }
-      </React.Fragment>
-    )
-  }
+      </div>
+    </React.Fragment>
+  )
 }
 
 export default Beads;
